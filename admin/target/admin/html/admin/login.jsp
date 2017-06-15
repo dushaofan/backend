@@ -13,17 +13,12 @@
 </head>
 <body id="login">
 <div class="container">
-
-    <form class="form-signin">
+    <form class="form-signin" method="post"  action="/admin/login">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="input-block-level" placeholder="Email address">
-        <input type="password" class="input-block-level" placeholder="Password">
-        <label class="checkbox">
-            <input type="checkbox" value="remember-me"> Remember me
-        </label>
+        <input type="text" name="userName" class="input-block-level" placeholder="userName">
+        <input type="password" name="passWord" class="input-block-level" placeholder="passWord">
         <button class="btn btn-large btn-primary" type="submit">Sign in</button>
     </form>
-
 </div> <!-- /container -->
 <script src="vendors/jquery-1.9.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
