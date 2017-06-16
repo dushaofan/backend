@@ -20,7 +20,9 @@ public class AdminServiceImpl  implements AdminService {
     public Boolean login(String userName, String userPwd)
     {
         Admin admin = adminDao.selectUserByUserNameAndPwd(userName, userPwd);
-
+        if ( admin == null ){
+             return false;
+        }
         return true;
     }
 }
